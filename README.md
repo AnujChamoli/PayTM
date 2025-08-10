@@ -1,20 +1,41 @@
-- Clone the repo
+💳 Paytm Clone – Peer-to-Peer Money Transfer App
+This is my personal project — a Paytm-inspired application that enables secure, real-time P2P (peer-to-peer) money transfers. It’s designed to replicate core Paytm wallet features, focusing on smooth payments, secure authentication, and a user-friendly interface.
 
-```jsx
-git clone https://github.com/100xdevs-cohort-2/week-17-final-code
-```
+🚀 Features
+⚡ Instant Transfers – Send and receive money in seconds.
 
-- npm install
-- Run postgres either locally or on the cloud (neon.tech)
+🔒 Secure Authentication – OTP verification, PIN lock, and JWT-based security.
 
-```jsx
-docker run  -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres
-```
+💳 Wallet System – Add money to your wallet and transfer it to other users.
 
-- Copy over all .env.example files to .env
-- Update .env files everywhere with the right db url
-- Go to `packages/db`
-    - npx prisma migrate dev
-    - npx prisma db seed
-- Go to `apps/user-app` , run `npm run dev`
-- Try logging in using phone - 1111111111 , password - alice (See `seed.ts`)
+📱 Transaction History – View all past transactions in one place.
+
+🔔 Notifications – Real-time alerts for incoming and outgoing payments.
+
+👥 Contact Integration – Send money directly to saved contacts.
+
+🛠 Tech Stack
+Frontend: React.js / Next.js
+
+Backend: Node.js, Express.js
+
+Database: MongoDB (Mongoose ORM)
+
+Authentication: JWT, OTP via Twilio / Firebase
+
+Payments API: Razorpay / Stripe (for adding funds)
+
+📦 Getting Started
+bash
+Copy
+Edit
+git clone https://github.com/<your-username>/paytm-clone.git
+cd paytm-clone
+npm install
+npm run dev
+📌 Notes
+This is a learning project for understanding fintech workflows.
+
+Not intended for production without proper PCI-DSS compliance.
+
+Future plans: UPI integration, QR code payments, and improved UI.
